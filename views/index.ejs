@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Lista de clubes</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Lista de clubes</h1>
+    <p><% for (item of resultado) {%>
+          <%= item.id%> | <%= item.nome%> | <%= item.sigla_estado%> <br>
+       <%}%>
+    </p>
   </body>
 </html>
