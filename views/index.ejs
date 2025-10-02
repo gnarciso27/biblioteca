@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lista de clubes</title>
+    <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Lista de clubes</h1>
-    <p><% for (item of resultado) {%>
-          <%= item.id%> | <%= item.nome%> | <%= item.sigla_estado%> <br>
-       <%}%>
-    </p>
+    <h1><%= title %></h1>
+    <p>Bem vindo ao <%= title %></p>
+    <ul>
+      <li>
+        <a href="http://localhost:3000/clubes/listar"> Listar </a>
+      </li>
+    </ul>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+ 

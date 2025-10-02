@@ -5,17 +5,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'aaaaaaaaaa' });
-});
-
-router.get('/clubes/listar', function(req, res){
-  db.query('SELECT * FROM clubes', [], function(erro, listagem){
-    if(erro){
-      res.send(erro);
-    }
-    res.send(listagem);
-  });
- 
+  res.render('index', { title: 'De chinelo' });
 });
 
 
@@ -24,8 +14,5 @@ router.get('/clubes/listar', function(req, res){
 
 
 
-
-
-
-
+console.log('http://localhost:3000');
 module.exports = router;
